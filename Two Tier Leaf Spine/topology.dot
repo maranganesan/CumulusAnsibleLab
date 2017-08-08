@@ -1,0 +1,33 @@
+graph G {
+
+
+
+    "testspine1":"swp1" -- "testleaf1":"swp1";
+    "testspine1":"swp2" -- "testleaf1":"swp2";
+    "testspine1":"swp3" -- "testleaf1":"swp3";
+    "testspine1":"swp4" -- "testleaf1":"swp4";
+
+
+    "testspine1":"swp5" -- "testleaf2":"swp5";
+    "testspine1":"swp6" -- "testleaf2":"swp6";
+    "testspine1":"swp7" -- "testleaf2":"swp7";
+    "testspine1":"swp8" -- "testleaf2":"swp8";
+
+
+    "testspine2":"swp1" -- "testleaf2":"swp1";
+    "testspine2":"swp2" -- "testleaf2":"swp2";
+    "testspine2":"swp3" -- "testleaf2":"swp3";
+    "testspine2":"swp4" -- "testleaf2":"swp4";
+
+    "testspine2":"swp5" -- "testleaf1":"swp5";
+    "testspine2":"swp6" -- "testleaf1":"swp6";
+    "testspine2":"swp7" -- "testleaf1":"swp7";
+    "testspine2":"swp8" -- "testleaf1":"swp8";
+
+    "testleaf1":"swp14" -- "server1":"eth0";
+    "testleaf1":"swp15" -- "server2":"eth0";
+
+    "testleaf2":"swp14" -- "server1":"eth1";
+    "testleaf2":"swp15" -- "server2":"eth1";
+
+} 

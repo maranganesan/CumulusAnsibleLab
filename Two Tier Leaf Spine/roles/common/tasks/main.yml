@@ -1,0 +1,9 @@
+- name: configure MOTD
+  template: src=motd.j2 dest=/etc/motd
+
+
+- name: configure ptmd topology.dot
+  copy: src=topology.dot dest=/etc/ptm.d/topology.dot
+  notify:
+    - restart ptmd
+

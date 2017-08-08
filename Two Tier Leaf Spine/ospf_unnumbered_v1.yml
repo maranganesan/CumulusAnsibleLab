@@ -1,0 +1,25 @@
+---
+- hosts: testspine
+  remote_user: maran
+  become: true
+  roles:
+    - common
+    - portsconfig
+    - ospfunnum
+  vars_files:
+    - roles/ospfunnum/vars/leafspinevars.yml
+  handlers:
+    - include: handlers/main.yml
+
+- hosts: testleaf
+  remote_user: maran
+  become: true
+  roles:
+    - common
+    - portsconfig
+    - ospfunnum
+  vars_files:
+    - roles/ospfunnum/vars/leafspinevars.yml
+  handlers:
+    - include : handlers/main.yml
+
