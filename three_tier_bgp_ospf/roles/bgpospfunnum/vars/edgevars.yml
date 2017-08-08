@@ -1,0 +1,11 @@
+interfaces:
+  edge1:
+    loopback: "1.1.1.1"
+    asn: 65011
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+    neighbors: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+  edge2:
+    loopback: "2.2.2.2"
+    asn: 65011
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+    neighbors: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]

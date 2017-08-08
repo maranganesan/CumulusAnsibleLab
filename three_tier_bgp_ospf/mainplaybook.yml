@@ -1,0 +1,40 @@
+---
+- hosts: leaf
+  remote_user: maran
+  become: true
+  roles:
+    - common
+    - portsconfig
+    - ospfunnum
+  vars_files:
+    - roles/ospfunnum/vars/leafvars.yml
+  handlers:
+    - include : handlers/main.yml
+      static: yes
+
+- hosts: spine
+  remote_user: maran
+  become: true
+  roles:
+    - common
+    - portsconfig
+    - bgpospfunnum
+  vars_files:
+    - roles/bgpospfunnum/vars/spinevars.yml
+  handlers:
+    - include : handlers/main.yml
+      static: yes
+
+- hosts: edge
+  remote_user: maran
+  become: true
+  roles:
+    - common
+    - portsconfig
+    - bgpunnum
+  vars_files:
+    - roles/bgpunnum/vars/edgevars.yml
+  handlers:
+    - include : handlers/main.yml
+      static: yes
+

@@ -1,0 +1,22 @@
+interfaces:
+  leaf1:
+    loopback: "7.7.7.7"
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+  leaf2:
+    loopback: "8.8.8.8"
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+
+  leaf3:
+    loopback: "9.9.9.9"
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+  leaf4:
+    loopback: "10.10.10.10"
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+
+  leaf5:
+    loopback: "11.11.11.11"
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+  leaf6:
+    loopback: "12.12.12.12"
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+

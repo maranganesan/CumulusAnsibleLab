@@ -1,0 +1,16 @@
+- name: Configure ports
+  nclu:
+   template: |
+       {% for iface in range(1,30) %}
+       add int swp{{iface}}
+       add int swp{{iface}} link speed 10000
+       {% endfor %}
+   commit: true
+   description: "Ansible - add swps1-48"
+
+  notify:
+    - restart switchd
+    - reload networking
+    - restart quagga
+
+

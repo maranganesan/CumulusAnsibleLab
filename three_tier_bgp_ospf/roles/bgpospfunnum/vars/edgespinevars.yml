@@ -1,0 +1,33 @@
+interfaces:
+  spine1:
+    loopback: "3.3.3.3"
+    asn: 65011
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4"]
+    neighbors: ["swp1", "swp2", "swp3", "swp4"]
+  spine2:
+    loopback: "4.4.4.4"
+    asn: 65011
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4"]
+    neighbors: ["swp1", "swp2", "swp3", "swp4"]
+  spine3:
+    loopback: "5.5.5.5"
+    asn: 65011
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4"]
+    neighbors: ["swp1", "swp2", "swp3", "swp4"]
+  spine4:
+    loopback: "6.6.6.6"
+    asn: 65011
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4"]
+    neighbors: ["swp1", "swp2", "swp3", "swp4"]
+
+  edge1:
+    loopback: "1.1.1.1"
+    asn: 65011
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+    neighbors: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+  edge2:
+    loopback: "2.2.2.2"
+    asn: 65011
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+    neighbors: ["swp1", "swp2", "swp3", "swp4", "swp5", "swp6", "swp7", "swp8"]
+

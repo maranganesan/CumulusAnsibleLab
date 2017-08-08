@@ -1,0 +1,27 @@
+interfaces:
+  spine1:
+    loopback: "3.3.3.3"
+    asn: 65011
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp10", "swp11", "swp12", "swp13", "swp14", "swp15", "swp16", "swp17", "swp18", "swp19", "swp20"]
+    neighbors: ["swp1", "swp2", "swp3", "swp4"]
+    ospf_interfaces: ["swp10", "swp11", "swp12", "swp13", "swp14", "swp15", "swp16", "swp17", "swp18", "swp19", "swp20"]
+  spine2:
+    loopback: "4.4.4.4"
+    asn: 65011
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp10", "swp11", "swp12", "swp13", "swp14", "swp15", "swp16", "swp17", "swp18", "swp19", "swp20"]
+    ospf_interfaces: ["swp10", "swp11", "swp12", "swp13", "swp14", "swp15", "swp16", "swp17", "swp18", "swp19", "swp20"]
+    neighbors: ["swp1", "swp2", "swp3", "swp4"]
+  spine3:
+    loopback: "5.5.5.5"
+    asn: 65011
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp10", "swp11", "swp12", "swp13", "swp14", "swp15", "swp16", "swp17", "swp18", "swp19", "swp20"]
+    ospf_interfaces: ["swp10", "swp11", "swp12", "swp13", "swp14", "swp15", "swp16", "swp17", "swp18", "swp19", "swp20"]
+    neighbors: ["swp1", "swp2", "swp3", "swp4"]
+  spine4:
+    loopback: "6.6.6.6"
+    asn: 65011
+    int_unnumbered: ["swp1", "swp2", "swp3", "swp4", "swp10", "swp11", "swp12", "swp13", "swp14", "swp15", "swp16", "swp17", "swp18", "swp19", "swp20"]
+    ospf_interfaces: ["swp10", "swp11", "swp12", "swp13", "swp14", "swp15", "swp16", "swp17", "swp18", "swp19", "swp20"]
+    neighbors: ["swp1", "swp2", "swp3", "swp4"]
+
+
